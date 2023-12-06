@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GuilanRice.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" type="text/css" href="_Layout.cshtml.css" />
+    <link rel="stylesheet" type="text/css" href="wwwroot\css\site.css" />
 </head>
 <body>
     <header>
         <div id="navbar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
+            <a class="active" href="javascript:void(0)">home</a>
+            <a href="javascript:void(0)">products</a>
+            <a href="javascript:void(0)">Contact</a>
         </div>
+
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -75,17 +76,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
-        window.onscroll = function () { myFunction() };
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >
-                = sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
+       
     </script>
 
     @await RenderSectionAsync("Scripts", required: false)
