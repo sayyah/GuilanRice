@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-//StickyMenu
+// StickyMenu
 
 window.onscroll = function() {myFunction()};
 
@@ -17,4 +17,49 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-//StickyMenu
+
+// StickyMenu
+
+
+// SlideShow
+
+var slideIndex = 0;
+var slides = document.getElementsByClassName("slide");
+var totalSlides = slides.length;
+
+showSlides();
+
+function showSlides() {
+  var oldSlideIndex = slideIndex - 1;
+  if (oldSlideIndex < 0) {
+    oldSlideIndex = totalSlides - 1;
+  }
+
+  // Remove animation classes from all slides
+  for (var i = 0; i < totalSlides; i++) {
+    slides[i].classList.remove("fadeToLeftNew", "fadeToLeftOld");
+  }
+
+  // Add animation classes for the old and new slides
+  slides[oldSlideIndex].classList.add("fadeToLeftOld");
+  slides[slideIndex].classList.add("fadeToLeftNew");
+
+  // Display the new slide
+  slides[slideIndex].style.display = "block";
+
+  // Increment slide index for next iteration
+  slideIndex++;
+  if (slideIndex >= totalSlides) {
+    slideIndex = 0;
+  }
+
+  // After 1 second, hide the old slide
+  setTimeout(function () {
+    slides[oldSlideIndex].style.display = "none";
+  }, 1000);
+
+  // Repeat after 15 seconds
+  setTimeout(showSlides, 15000);
+}
+
+// SlideShow
