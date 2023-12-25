@@ -10,6 +10,24 @@
 @import url(css/custom.css);
 /* :: 3.0 Base CSS */
 
+/*TopHeader*/
+
+.TopHeader {
+    height: 42px;
+    background-color: transparent;
+}
+
+.Mail {
+    display: inline-block;
+    margin-left: 210px;
+    margin-top: 7px;
+}
+
+.Phone {
+    display: inline-block;
+    margin-left: 30px;
+}
+
 /*StickyMenu*/
 
 body {
