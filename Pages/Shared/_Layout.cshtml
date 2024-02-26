@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>@ViewData["Title"] - GuilanRice</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GuilanRice.styles.css" asp-append-version="true" />
-
     <meta name="description" content="Rice Industries - Best Rice Dealer and Exporter. ">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
-
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,14 +27,9 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-133720731-1');
     </script>
-
-
-
 </head>
-
 <body>
     <header>
         <div id="navbar">
@@ -46,7 +42,7 @@
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">GuilanRice</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -64,18 +60,466 @@
     </header>
 
 
- 
 
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
 
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta">
+                                <a href="mailto:mail@trickuweb.com?Subject=Hello%20" data-toggle="tooltip" data-placement="bottom" title="mail@trickuweb.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: mail@trickuweb.com</span></a>
+                                <a href="tel:+91-8789529215" data-toggle="tooltip" data-placement="bottom" title="+91 70910-967-77/ 78 /79 /80"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91-8789529215</span></a>
+                            </div>
 
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta d-flex">
+                                <!-- Language Dropdown -->
+                                <div class="language-dropdown">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CERTIFICATES</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#fssai">FSSAI License Number - 10417030000029</a>
+                                            <a class="dropdown-item" href="#iso">ISO 9001:2015 - 181023602</a>
+                                            <a class="dropdown-item" href="#apeda">Member of APEDA</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="language-dropdown" id="google_translate_element">
+                                    <script type="text/javascript">
+                                        function googleTranslateElementInit() {
+                                            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                                        }
+                                    </script>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://www.facebook.com/pg/Maa-Durga-Industries-494943811033094/about/?ref=page_internal"><i class="fa fa-facebook" target="_blank" aria-hidden="true"></i></a>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://twitter.com/maadurgaindus"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://plus.google.com/111444152594664066019"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                                <!-- <div>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="index.php" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="products.php">Our Products</a></li>
+                                    <li><a href="careers.php">Careers</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
+                                </ul>
+
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <!-- Post Content -->
+                                <div class="hero-slides-content text-center">
+                                    <h2>Rice INDUSTRIES</h2>
+                                    <p>Best Rice Processor, Exporter, Dealer & Supplier over the entire globe.</p>
+                                    <div class="welcome-btn-group">
+                                        <a href="products.php" class="btn alazea-btn mr-30">VIEW PRODUCTS</a>
+                                        <a href="contact.php" class="btn alazea-btn active">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Major producer of Non Basmati and Global Exporter</h2>
+                                <p>Rice Industries is a Major Producer and International Supplier of Non Basmati rice. Supply Paddy, Brown and Milled rice.</p>
+                                <div class="welcome-btn-group">
+                                    <a href="products.php" class="btn alazea-btn mr-30">VIEW PRODUCTS</a>
+                                    <a href="contact.php" class="btn alazea-btn active">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/2.jpg); position:fixed; display:none; z-index: 2147483647;"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Taste the best texture of fine rice</h2>
+                                <p>You will experience the taste and texture of fine rice with each order from Rice distributer, where you can taste the difference.</p>
+                                <div class="welcome-btn-group">
+                                    <a href="products.php" class="btn alazea-btn mr-30">VIEW PRODUCTS</a>
+                                    <a href="contact.php" class="btn alazea-btn active">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+    <!-- ##### Service Area Start ##### -->
+    <section class="our-services-area bg-gray section-padding-100-0" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>BEST QUALITY RICE</h2>
+                        <p>We provide the perfect and fine textured rice for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <div class="alazea-service-area mb-100">
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="img/core-img/s1.png" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Rice Organic Rice</h5>
+                                <p>Organic Rice is rich in fiber and good for your digestion. Help you to reduce heart disease and certain cancer risk. Rice Industries work hard to deliver you high quality rice.</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="img/core-img/s2.png" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Rice Parboiled Rice</h5>
+                                <p>Parboiled rice has a low glycemic score and double fiber than cooked white rice. A low glycemic score will prevent you from blood sugar. Make an enquiry right now get parboiled rice at wholesale rates from us.</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="img/core-img/s3.png" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Rice Silky Sortex Non Basmati Rice</h5>
+                                <p>Rice Silky Sortex Non Basmati Rice is having high levels of proteins and unique nutritional profits. It contains vitamins, zinc magnesium, also there is no fat or cholesterol found in Rice Silky Sortex Non Basmati Rice.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="alazea-video-area bg-overlay mb-100">
+                        <img src="img/bg-img/vid.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=G33_pyAzZHU" class="video-icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Service Area End ##### -->
+    <!-- ##### About Area Start ##### -->
+    <section class="about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>ABOUT US</h2>
+                        <p>We are leading in the rice export field.</p>
+                    </div>
+                    <p>We welcome you to Rice Indutries, best wholesale rice Processor, Exporter, Rice Milling & Supplier </p>
+                    <p>Rice Industries commenced its operation in India in 2008. We are dedicated to the best customer service for non basmati rice, and we hope you will help us to colour people happy.</p>
+                    <p>
+                        We are passionate about delivering the highest quality ingredients. Our Rice has been patiently mature to preserve its delicate aromas.
+                        The company's vision is to focus on a long-term business growth and our drive to innovate has set a steep bar for the food industry to follow.
+                        We value every single person with a unique idea or a new vision that could contribute to the next chapter of our story.
+                    </p>
+                    <p>We have RICE dealers all over the globe. Each store is different and have its own personality, and we embrace this.</p>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="alazea-benefits-area">
+                        <div class="row">
+                            <!-- Single Benefits Area -->
+                            <div class="col-12 col-sm-6">
+                                <div class="single-benefits-area">
+                                    <img src="img/core-img/b1.png" alt="">
+                                    <h5>Quality Products</h5>
+                                    <p>Get only high quality and standard products from Rice Industries. Our all products are well tested and examine before delivering to our dealers.</p>
+                                </div>
+                            </div>
+                            <!-- Single Benefits Area -->
+                            <div class="col-12 col-sm-6">
+                                <div class="single-benefits-area">
+                                    <img src="img/core-img/b2.png" alt="">
+                                    <h5>Perfect Service</h5>
+                                    <p>We believe in providing perfect service to our clients. We follow the approach of one time promise and long time service from our end.</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Benefits Area -->
+                            <div class="col-12 col-sm-6">
+                                <div class="single-benefits-area">
+                                    <img src="img/core-img/b3.png" alt="">
+                                    <h5>100% Natural</h5>
+                                    <p>All of our rice is produced with natural process only. We don't use chemicals and any other artificial products.</p>
+                                </div>
+                            </div>
+                            <!-- Single Benefits Area -->
+                            <div class="col-12 col-sm-6">
+                                <div class="single-benefits-area">
+                                    <img src="img/core-img/b4.png" alt="">
+                                    <h5>Environmentally friendly</h5>
+                                    <p>All of our products and manufacturing processes are 100% natural and environmentally friendly. We make an effort to deliver you high quality rice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Area End ##### -->
+    <!-- ##### Portfolio Area Start ##### -->
+    <section class="alazea-portfolio-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>OUR PRODUCTS</h2>
+                        <p>Reliability on high quality standards from farm to final destination, enables us to guarantee quality rice, consistent supply.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row alazea-portfolio">
+
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r1-25.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r1-25.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r2-25.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r2-25.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r3-25.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r3-25.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r4-25.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r4-25.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp" data-wow-delay="100ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r2.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r2.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r3.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r3.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Portfolio Area -->
+            <div class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp" data-wow-delay="300ms">
+                <!-- Portfolio Thumbnail -->
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/r1.jpg);"></div>
+                <!-- Portfolio Hover Text -->
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/r1.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
+                        <div class="port-hover-text">
+                            <h3>Best Quality Premium Rice</h3>
+                            <h5>Extra Fine Rice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ##### Portfolio Area End ##### -->
+    <!-- ##### Subscribe Area Start ##### -->
+    <section class="subscribe-newsletter-area mt-5" style="background-image: url(img/bg-img/subscribe.jpg);">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-9">
+                    <!-- Section Heading -->
+                    <div class="section-heading mb-0">
+                        <h2 class="text-white">TASTE THE BEST WITH Rice INDUSTRIES</h2>
+                        <p class="text-white">
+                            Our products are being exported to the many places in India and outside India either directly or through associates.
+                            The result is guaranteed consistency at the consumer table every time. Our mission to ensure consistently longer aged rice to deliver better value to the customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="subscribe-form pull-right">
+                        <a href="contact.php">
+                            <button type="submit" class="btn alazea-btn">CONTACT NOW</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe Side Thumbnail -->
+        <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
+            <img class="first-img" src="img/core-img/leaf.png" alt="">
+        </div>
+    </section>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-
     <!-- ##### Subscribe Area Start ##### -->
     <section class="subscribe-newsletter-area mt-5">
         <div class="container">
@@ -99,21 +543,17 @@
                 </div>
             </div>
         </div>
-
         <!-- Subscribe Side Thumbnail -->
         <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
             <img class="first-img" src="~/img/leaf.png" width="70px" height="50px" alt="">
         </div>
     </section>
     <!-- ##### Subscribe Area End ##### -->
-
-
     <footer class="footer-area bg-img">
         <!--main footerarea-->
         <div class="main-footer-area">
             <div class="container">
                 <div class="row">
-
                     <!--single footer widget-->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
@@ -122,8 +562,10 @@
                                     <img src="/img/logo.png" alt="">
                                 </a>
                             </div>
-                            <p>Experience the taste and texture of fine rice with each order from Rice distributer,
-                                where you can taste the difference.</p>
+                            <p>
+                                Experience the taste and texture of fine rice with each order from Rice distributer,
+                                where you can taste the difference.
+                            </p>
                             <div class="social-info">
                                 <a href="#"><i class='bx bxl-facebook-circle'></i></a>
                                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -131,73 +573,72 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-6">
                         <div class="single-footer-widget">
                             <div class="widget-title">
                                 <h5>BEST SELLER</h5>
                             </div>
-
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="products.php"><img src="/img/sella.jpg" width="70px" height="92px"
-                                            alt=""></a>
+                                    <a href="products.php">
+                                        <img src="/img/sella.jpg" width="70px" height="92px"
+                                             alt="">
+                                    </a>
                                 </div>
                                 <div class="product-info">
                                     <a href="products.php">Rice Premium</a>
                                     <p>COOK EASY RICE 20 KG (Sella Sonam)</p>
                                 </div>
                             </div>
-
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="products.php"><img src="/img/steam.jpg" width="70px" height="50px"
-                                            alt=""></a>
+                                    <a href="products.php">
+                                        <img src="/img/steam.jpg" width="70px" height="50px"
+                                             alt="">
+                                    </a>
                                 </div>
                                 <div class="product-info">
                                     <a href="products.php">Rice Premium</a>
                                     <p>COOK EASY RICE 20 KG (Steam Sonam)</p>
                                 </div>
                             </div>
-
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="products.php"><img src="/img/sella25.jpg" width="70px" height="93px"
-                                            alt=""></a>
+                                    <a href="products.php">
+                                        <img src="/img/sella25.jpg" width="70px" height="93px"
+                                             alt="">
+                                    </a>
                                 </div>
                                 <div class="product-info">
                                     <a href="products.php">Rice Premium</a>
                                     <p>COOK EASY RICE 25 Kg (Sella Sonam)</p>
                                 </div>
                             </div>
-
                             <!-- Single Best Seller Products -->
                             <div class="single-best-seller-product d-flex align-items-center">
                                 <div class="product-thumbnail">
-                                    <a href="products.php"><img src="/img/steam25.jpg" width="70px" height="50px"
-                                            alt=""></a>
+                                    <a href="products.php">
+                                        <img src="/img/steam25.jpg" width="70px" height="50px"
+                                             alt="">
+                                    </a>
                                 </div>
                                 <div class="product-info">
                                     <a href="products.php">Rice Premium</a>
                                     <p>COOK EASY RICE 25 Kg (Steam Katarni)</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget">
                             <div class="widget-title">
                                 <h5>CONTACT</h5>
                             </div>
-
                             <div class="contact-information">
                                 <p>
                                     <span>Address:</span>
@@ -207,18 +648,16 @@
                                 </p>
                                 <p><span>Phone:</span>+91-8789529215</p>
                                 <p><span>Email:</span> mail@trickuweb.com</p>
-                                <p><span>Email (For any enquery related to rice export):</span> riceexport@trickuweb.com
+                                <p>
+                                    <span>Email (For any enquery related to rice export):</span> riceexport@trickuweb.com
                                 </p>
                                 <p><span>Open hours:</span> Mon - Sun: 10 AM to 6 PM</p>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
-
         <!-- Footer Bottom Area -->
         <div class="footer-bottom-area">
             <div class="container">
@@ -235,8 +674,8 @@
                                 Copyright &copy;
                                 <script>document.write(new Date().getFullYear());</script> All rights reserved |
                                 Developed by <a href="https://www.trickuweb.com" target="_blank"
-                                    title="Website Design and Software Development Company Patna"
-                                    style="color: #b7b7b7;">TrickuWeb </a>
+                                                title="Website Design and Software Development Company Patna"
+                                                style="color: #b7b7b7;">TrickuWeb </a>
                             </p>
                         </div>
                     </div>
@@ -257,13 +696,30 @@
                 </div>
             </div>
         </div>
-
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display:block; scroll-behavior:smooth;"><i class="fa fa-angle-up"></i></a>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollUp");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 
-    @await RenderSectionAsync("Scripts", required: false)
+        }
+    </script>
 </body>
 
 </html>
