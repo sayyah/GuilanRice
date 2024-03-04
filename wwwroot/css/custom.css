@@ -1,0 +1,31 @@
+.text-white {
+    color: #ffffff !important;
+}
+
+.construction {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #fff;
+    border: 2px;
+    border-color: #000;
+    background-color: rgb(255, 234, 143);
+}
+
+.const {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .const {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mybanner {
+        height: 400px !important;
+        width: 300px !important;
+    }
+}
